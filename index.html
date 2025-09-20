@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Alejandro Vanderhorst</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Alejandro Vanderhorst | Course landing page with navigation, profile, resources, and dynamic dates." />
+    <meta name="author" content="Alejandro Vanderhorst" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="./styles/base.css" />
+
+    <!-- JS (defer so it runs after HTML is parsed) -->
+    <script src="./scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <hgroup>
+        <h1 id="course-title">WDD 131: Dynamic Web Fundamentals <span class="accent">– Alejandro Vanderhorst</span></h1>
+      </hgroup>
+      <nav class="site-nav">
+        <a href="https://www.linkedin.com/in/alejandro-vanderhorst/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+        <a href="./final-project/" target="_blank" rel="noopener">Final Project</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card about">
+        <header class="card-title">About Me</header>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              My name is Alejandro and I go by Alex. I live in the Dominican Republic.
+              I’m currently studying software development and enjoy building custom PCs.
+              My family is everything to me. I love to learn new things and help others.
+            </p>
+
+            <h3 class="subhead">Santo Domingo, Dominican Republic</h3>
+            <div class="place-grid">
+              <figure class="flag">
+                <img src="./images/dominicanflag.png" alt="Official Flag of the Dominican Republic" width="160" height="100" loading="lazy">
+                <figcaption><em>Official Flag of the Dominican Republic</em></figcaption>
+              </figure>
+              <p class="paragraph">
+                The Dominican Republic is located on the island of Hispaniola in the Caribbean. 
+                It’s known for its beaches, mountains, merengue music, and friendly people.
+                The capital city is <strong>Santo Domingo</strong>, the oldest continuously inhabited
+                European settlement in the Americas.
+              </p>
+            </div>
+          </div>
+
+          <figure class="profile">
+            <img src="./images/alejandro1.jpg" alt="Portrait of Alejandro Vanderhorst" width="260" height="320" loading="lazy">
+          </figure>
+        </div>
+      </section>
+
+      <aside class="card resources">
+        <header class="card-title">Web Dev Resources</header>
+        <ul class="links">
+          <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+          <li><a href="https://placeholder.com/" target="_blank" rel="noopener">Image Placeholder</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="currentyear"></span>
+        <span class="sep">🌸</span> Alejandro Vanderhorst <span class="sep">🌸</span> Dominican Republic
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
