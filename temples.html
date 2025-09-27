@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+
+  <!-- Google Fonts: pick 1–2 you like -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Mobile first CSS, then large overrides -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 900px)">
+
+  <!-- JS (deferred) -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar container">
+      <div class="brand">
+        <span class="title">Temple Album</span>
+      </div>
+
+      <!-- Hamburger only for mobile; hidden in large CSS -->
+      <button id="menu" class="hamburger" aria-label="Open menu"
+              aria-controls="primary-nav" aria-expanded="false">☰</button>
+
+      <nav id="primary-nav" class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Home</h1>
+
+    <!-- Gallery grid -->
+    <section class="gallery">
+      <!-- Use the same placeholder for now; replace alt/captions later -->
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="San Diego California Temple">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name • WDD 131</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
