@@ -4,16 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Madagascar — Country Page</title>
-  <link rel="stylesheet" href="styles/place.css" />
+
+  <!-- reuse the same site styles -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 900px)" />
+
+  <!-- page-specific JS -->
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <h1>Madagascar</h1>
-    <p class="tagline">Island nation off the southeast coast of Africa</p>
+    <div class="header-bar container">
+      <div class="brand">
+        <span class="title">Madagascar</span>
+      </div>
+    </div>
+    <p class="tagline container">Island nation off the southeast coast of Africa</p>
   </header>
 
-  <main class="layout">
+  <main class="container">
     <!-- HERO (WebP + responsive) -->
     <section class="hero">
       <picture>
@@ -38,7 +47,6 @@
     <!-- WEATHER -->
     <section class="weather-card">
       <h2 class="weather-heading">Weather</h2>
-      <!-- SVG icon shown on small screens (CSS hides on wide) -->
       <img class="weather-icon-mobile" src="icons/weather-cloudy.svg" alt="Cloudy">
       <div class="weather-grid">
         <p>Temp: <span id="tempValue">48</span> °F</p>
@@ -59,8 +67,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> • Country Page</p>
-    <p>Last modified: <span id="lastModified"></span></p>
+    <div class="container">
+      <p>&copy; <span id="year"></span> • Country Page</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
   </footer>
 </body>
 </html>
