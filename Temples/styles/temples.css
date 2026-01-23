@@ -1,0 +1,134 @@
+:root{
+  --purple: #4b1778;   
+  --purple-700: #3d1261;
+  --text: #1c1c1c;
+  --text-on-purple: #ffffff;
+  --bg: #ffffff;
+  --panel: #f6f6f8;
+  --border: #e3e3e8;
+  --muted: #6a6a76;
+  --hover: #ece8f6;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body{
+  font-family: Mulish, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+
+.container{
+  max-width: 70rem;   
+  margin: 0 auto;     
+  padding: 0 1rem;
+}
+
+.site-header{
+  background: var(--purple);
+  color: var(--text-on-purple);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 0;
+}
+
+.brand .title{
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.hamburger{
+  background: transparent;
+  color: var(--text-on-purple);
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.nav{ display: none; }
+.nav.open{ display: block; }
+
+.nav ul{
+  list-style: none;
+  margin: .5rem 0 0;
+  padding: 0;
+  display: flex;              
+  flex-direction: column;     
+  gap: .25rem;
+}
+
+.nav a{
+  color: var(--text-on-purple);
+  text-decoration: none;
+  padding: .5rem .6rem;
+  border-radius: .4rem;
+  display: inline-block;
+}
+
+.nav a:hover{
+  background: var(--purple-700);  
+}
+
+/* Main */
+main h1{
+  font-family: "Merriweather", Georgia, serif;
+  text-align: center;
+  margin: 1rem 0 1rem;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+figure{
+  margin: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+figure img{
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+figcaption{
+  text-align: center;
+  color: var(--muted);
+  padding: .6rem .75rem;
+  font-weight: 700;
+}
+
+/* Footer */
+.site-footer{
+  background: var(--purple);
+  color: var(--text-on-purple);
+  margin-top: 2rem;
+  padding: 1rem 0 1.25rem;
+  text-align: center;
+}
+
+.site-footer p{
+  margin: .25rem 0;
+  font-size: .95rem;
+}
