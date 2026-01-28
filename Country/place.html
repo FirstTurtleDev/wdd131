@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madagascar — Country Page</title>
+
+  <!-- reuse the same site styles -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 900px)" />
+
+  <!-- page-specific JS -->
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar container">
+      <div class="brand">
+        <span class="title">Madagascar</span>
+      </div>
+    </div>
+    <p class="tagline container">Island nation off the southeast coast of Africa</p>
+  </header>
+
+  <main class="container">
+    <!-- HERO (WebP + responsive) -->
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 900px)" srcset="images/Madagascar-coast.jpg">
+        <source media="(min-width: 600px)" srcset="images/Madagascar-coast.jpg">
+        <img src="images/Madagascar-coast.jpg" alt="Madagascar coastline" loading="eager">
+      </picture>
+      <figcaption class="hero-caption">Coastline near Fort Dauphin</figcaption>
+    </section>
+
+    <!-- DATA / FACTS -->
+    <section class="data-card">
+      <h2>Facts</h2>
+      <ul>
+        <li><strong>Capital:</strong> Antananarivo</li>
+        <li><strong>Population:</strong> ~29 million</li>
+        <li><strong>Language:</strong> Malagasy, French</li>
+        <li><strong>Currency:</strong> Malagasy ariary (MGA)</li>
+      </ul>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather-card">
+      <h2 class="weather-heading">Weather</h2>
+      <img class="weather-icon-mobile" src="icons/weather-cloudy.svg" alt="Cloudy">
+      <div class="weather-grid">
+        <p>Temp: <span id="tempValue">48</span> °F</p>
+        <p>Wind: <span id="windValue">6</span> mph</p>
+        <p>Wind Chill: <span id="windChill">N/A</span></p>
+        <p>Conditions: Partly cloudy ⛅</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-card">
+      <h2>About</h2>
+      <p>
+        Madagascar is famed for its unique biodiversity—over 90% of its wildlife is found
+        nowhere else on Earth. From baobab trees to lemurs, it’s a dream for nature lovers.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> • Country Page</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

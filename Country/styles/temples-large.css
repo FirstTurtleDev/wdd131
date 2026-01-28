@@ -1,0 +1,15 @@
+/* desktop / large screens */
+.hamburger{ display: none; }     /* hide burger on wide screens */
+.nav{ display: block; }          /* always show nav at large widths */
+.nav ul{ flex-direction: row; gap: 1rem; margin-top: 0; }
+
+.header-bar{ gap: 2rem; }
+.nav a{ padding: .6rem .75rem; border-radius: .35rem; }
+
+/* 3-column gallery at desktop */
+.gallery{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 2rem;
+}
+
+main h1{ margin: 1.5rem 0 1.25rem; }

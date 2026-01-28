@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+  <meta name="description" content="A photo album gallery of Latter-day Saint temples from around the world." />
+  <meta name="author" content="Alejandro Vanderhorst" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- Shared site styles (one level up from /Temples/) -->
+  <!-- Shared site styles (one level up from /Temples/) -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- Page behavior (hamburger, footer year/modified, etc.) -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-bar container">
+      <div class="brand">
+        <span class="title">Temple Album</span>
+      </div>
+
+      <button id="menu" class="hamburger" aria-label="Open menu" aria-controls="primary-nav"
+        aria-expanded="false">☰</button>
+
+      <nav id="primary-nav" class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Home</h1>
+
+    <!-- Static gallery (original assignment) -->
+    <section class="gallery">
+      <figure>
+        <img src="images/temple-brasil.jpg" alt="Campinas Brazil Temple" loading="lazy">
+        <figcaption>Brasil</figcaption>
+      </figure>
+      <figure>
+        <img src="images/honduras-temple.jpg" alt="Tegucigalpa Honduras Temple" loading="lazy">
+        <figcaption>Honduras</figcaption>
+      </figure>
+      <figure>
+        <img src="images/lds-panama-temple.jpg" alt="Panama City Panama Temple" loading="lazy">
+        <figcaption>Panama City</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-mexico-city.jpg" alt="Mexico City Mexico Temple" loading="lazy">
+        <figcaption>Mexico City</figcaption>
+      </figure>
+      <figure>
+        <img src="images/santo-domingo-temple.jpg" alt="Santo Domingo Dominican Republic Temple" loading="lazy">
+        <figcaption>Santo Domingo</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple, Utah, USA" loading="lazy">
+        <figcaption>Salt Lake City</figcaption>
+      </figure>
+      <figure>
+        <img src="images/taiwan-temple.jpg" alt="Taipei Taiwan Temple" loading="lazy">
+        <figcaption>Taipei</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-toronto.jpg" alt="Toronto Ontario Temple" loading="lazy">
+        <figcaption>Toronto</figcaption>
+      </figure>
+      <figure>
+        <img src="images/trujillo-temple.jpg" alt="Trujillo Peru Temple" loading="lazy">
+        <figcaption>Trujillo</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name • WDD 131</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
