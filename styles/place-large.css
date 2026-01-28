@@ -1,0 +1,72 @@
+/* Desktop Layout */
+@media (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        padding: 0;
+        max-width: 1000px;
+        /* Limit width */
+        margin: 2rem auto;
+    }
+
+    .hero {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .data-box {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        align-self: center;
+        margin-left: 3rem;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.85);
+        /* Semi-transparent */
+        max-width: 300px;
+        position: relative;
+        /* For stacking context if needed */
+
+        /* Check layout - usually it's overlayed */
+    }
+
+    .weather-box {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        align-self: center;
+        margin-right: 3rem;
+        justify-self: end;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.85);
+        max-width: 300px;
+        position: relative;
+    }
+
+    /* Pseudo-element for Weather Icon */
+    .weather-box h2::after {
+        content: "";
+        /* Will be replaced with image/icon */
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url('../images/weather.svg');
+        /* Path to icon */
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    /* Hide the mobile SVG icon in desktop view as we use pseudo-element */
+    .weather-icon {
+        display: none;
+    }
+}

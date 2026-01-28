@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominican Republic - Place Page</title>
+    <meta name="author" content="Alejandro Vanderhorst">
+    <meta name="description" content="A page describing the geography and weather of the Dominican Republic.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Dominican Republic</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/dominican-republic-img.jpeg" media="(min-width: 1000px)">
+                <source srcset="images/dominican-republic-img.jpeg" media="(min-width: 500px)">
+                <img src="images/dominican-republic-img.jpeg" alt="Dominican Republic Landscape" width="800"
+                    height="400">
+            </picture>
+        </div>
+        <section class="data-box">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 48,671 sq km</li>
+                <li><strong>Population:</strong> 10,847,904</li>
+                <li><strong>Capital:</strong> Santo Domingo</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Dominican Peso</li>
+                <li><strong>Time Zone:</strong> UTC-4</li>
+                <li><strong>Calling Code:</strong> +1-809</li>
+                <li><strong>Internet TLD:</strong> .do</li>
+            </ul>
+        </section>
+        <section class="weather-box">
+            <h2>Weather</h2>
+            <div class="weather-content">
+                <img src="images/weather.svg" alt="Sunny" class="weather-icon">
+                <ul class="data-list" style="width: 100%;">
+                    <li><strong>Temperature:</strong> <span><span id="temp">29</span>°C</span></li>
+                    <li><strong>Conditions:</strong> Sunny</li>
+                    <li><strong>Wind:</strong> <span><span id="wind">15</span> km/h</span></li>
+                    <li><strong>Wind Chill:</strong> <span id="chill">N/A</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Alejandro Vanderhorst Burgos
+        </p>
+        <p class="last-modification" id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

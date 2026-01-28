@@ -1,0 +1,125 @@
+:root {
+    /* Professional DR Theme (Monochromatic Blue) */
+    --primary-color: #004080;
+    /* Slightly lighter dark blue */
+    --secondary-color: #00509d;
+    /* Lighter Steel Blue for accents/borders */
+    --accent-color: #FFFFFF;
+    /* White */
+    --text-color: #333333;
+    /* Softer Charcoal for text */
+    --background-color: #F8F9FA;
+    /* Clean Light Gray/White background */
+    --footer-bg: #004080;
+    --font-heading: 'Roboto', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-box,
+.weather-box {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--secondary-color);
+}
+
+.data-box h2,
+.weather-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+}
+
+.data-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.data-list li strong {
+    color: var(--secondary-color);
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-icon {
+    width: 64px;
+    height: 64px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
