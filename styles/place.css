@@ -1,15 +1,11 @@
 :root {
-    /* Professional DR Theme (Monochromatic Blue) */
+
     --primary-color: #004080;
-    /* Slightly lighter dark blue */
+
     --secondary-color: #00509d;
-    /* Lighter Steel Blue for accents/borders */
     --accent-color: #FFFFFF;
-    /* White */
     --text-color: #333333;
-    /* Softer Charcoal for text */
     --background-color: #F8F9FA;
-    /* Clean Light Gray/White background */
     --footer-bg: #004080;
     --font-heading: 'Roboto', serif;
     --font-body: 'Inter', sans-serif;
