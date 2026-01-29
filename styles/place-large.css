@@ -50,23 +50,18 @@
         position: relative;
     }
 
-    /* Pseudo-element for Weather Icon */
-    .weather-box h2::after {
-        content: "";
-        /* Will be replaced with image/icon */
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-image: url('../images/weather.svg');
-        /* Path to icon */
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-left: 10px;
-        vertical-align: middle;
+    .weather-title {
+        text-align: center;
     }
 
-    /* Hide the mobile SVG icon in desktop view as we use pseudo-element */
-    .weather-icon {
+    .desktop-icon {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        /* Reduced margin for better proximity */
+    }
+
+    .mobile-icon {
         display: none;
     }
 }

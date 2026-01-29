@@ -120,3 +120,11 @@ footer {
 footer p {
     margin: 0.5rem 0;
 }
+
+.desktop-icon {
+    display: none;
+}
+
+.mobile-icon {
+    display: block;
+}
