@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Filtered Temple Album</title>
+  <meta name="description" content="A photo album gallery of Latter-day Saint temples from around the world." />
+  <meta name="author" content="Alejandro Vanderhorst" />
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-bar container">
+      <div class="brand">
+        <span class="title">Temple Album</span>
+      </div>
+
+      <button id="menu" class="hamburger" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+
+      <nav id="primary-nav" class="nav">
+        <ul>
+          <li><a href="#" data-filter="all">Home</a></li>
+          <li><a href="#" data-filter="old">Old</a></li>
+          <li><a href="#" data-filter="new">New</a></li>
+          <li><a href="#" data-filter="large">Large</a></li>
+          <li><a href="#" data-filter="small">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Home</h1>
+
+    <!-- Dynamic gallery: JS will populate this -->
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name • WDD 131</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
