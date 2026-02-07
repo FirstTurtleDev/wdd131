@@ -64,11 +64,11 @@ const temples = [
     imageUrl: "images/temple-brasil.jpg"
   },
   {
-    templeName: "Rome Italy",
-    location: "Rome, Italy",
+    templeName: "Toronto",
+    location: "Toronto, Ontario, Canada",
     dedicated: "2019, March, 10",
     area: 93000,
-    imageUrl: "images/honduras-temple.jpg"
+    imageUrl: "images/temple-toronto.jpg"
   }
 ];
 
