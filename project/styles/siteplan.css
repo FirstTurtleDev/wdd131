@@ -85,6 +85,27 @@ li {
     text-align: center;
 }
 
+.primary-color {
+    background-color: #0A2540;
+    color: #fff;
+}
+
+.secondary-color {
+    background-color: #00D4FF;
+    color: #000;
+}
+
+.accent-color {
+    background-color: #F4F4F4;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.text-color {
+    background-color: #333333;
+    color: #fff;
+}
+
 /* Typography Examples */
 .font-demo {
     margin-bottom: 2rem;
