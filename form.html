@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form - WDD 131</title>
+    <meta name="description" content="Product Review Form for WDD 131 Assignment">
+    <meta name="author" content="Alejandro">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Details</legend>
+                <label for="product">Product Name: <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <div class="rating-option">
+                        <label for="star1">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star2">☆☆</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star3">☆☆☆</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star4">☆☆☆☆</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star5">☆☆☆☆☆</label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Installation Details</legend>
+                <label for="installation-date">Date of Installation: <span class="required">*</span></label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Review</legend>
+                <label for="written-review">Written Review:</label>
+                <textarea id="written-review" name="written-review"></textarea>
+
+                <label for="user-name">Your Name (Optional):</label>
+                <input type="text" id="user-name" name="user-name">
+            </fieldset>
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Alejandro | WDD 131</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
