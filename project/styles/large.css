@@ -1,0 +1,59 @@
+/* Desktop Layout (min-width: 700px) */
+@media (min-width: 700px) {
+
+    /* Navigation */
+    .hamburger {
+        display: none;
+        /* Hide hamburger on desktop */
+    }
+
+    nav ul {
+        display: flex;
+        /* Always visible */
+        flex-direction: row;
+        position: static;
+        /* Reset position */
+        background-color: transparent;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    /* Main Content */
+    main {
+        padding: 3rem 2rem;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero img {
+        flex: 1;
+        margin: 0;
+        max-width: 50%;
+    }
+
+    /* Service Cards Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns on desktop */
+    }
+
+    /* Contact Form Button */
+    button[type="submit"] {
+        width: auto;
+        padding: 0.8rem 3rem;
+    }
+}

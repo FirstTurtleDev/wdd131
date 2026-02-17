@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Zavixo LLC for your data analysis needs.">
+    <meta name="author" content="Alejandro">
+    <title>Contact Zavixo | Get in Touch</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">ZAVIXO</a>
+        <button id="menu" class="hamburger" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Ready to unlock your data's potential? Send us a message.</p>
+
+        <form id="contact-form" action="#" method="get">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+                <label for="service-interest">Service of Interest:</label>
+                <select id="service-interest" name="service">
+                    <option value="" disabled selected>Select a Service...</option>
+                    <option value="predictive">Predictive Analytics</option>
+                    <option value="mining">Data Mining</option>
+                    <option value="bi">Business Intelligence</option>
+                    <option value="consulting">Strategy Consulting</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" required></textarea>
+            </fieldset>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="message-status" style="margin-top: 1rem; text-align: center; font-weight: bold;"></div>
+        <p style="text-align: center; font-size: 0.9rem; color: #666;">Total Messages Sent: <span
+                id="message-count">0</span></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Zavixo LLC</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>
